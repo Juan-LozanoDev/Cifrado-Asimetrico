@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --Gray: rgb(0, 0, 0, 0.2);
+}
+
+p {
+    margin-block: 1rem;
+}
+
+a {
+    color: rgb(30, 127, 255);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:active {
+    color: #9766db;
+}
+
+
+ol {
+    padding-inline-start: 1rem;
+}
+
+li {
+    margin-block: 1rem;
+    margin-inline-start: 2rem;
+}
+
+figcaption {
+    text-align: center;
+    font-style: italic;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(#8bcafd, rgb(233, 233, 233), #8bcafd);
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-bottom: 1px solid rgb(204, 204, 204);
+    position: fixed;
+    width: 100%;
+}
+
+.Blog {
+    background-color: rgb(247, 247, 247);
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+}
+
+section {
+    margin-inline: 10rem;
+    margin-bottom: 2rem;
+    background-color: white;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 10px;
+    padding: 2rem 2rem;
+}
+
+.criptosistema-publico img {
+    display: block;
+    margin: 0 auto;
+    max-width: 350px;
+    height: auto;
+}
+
+pre {
+    background-color: #282a36;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 0.5rem;
+    overflow-x: hidden;
+    font-size: 12px;
+    color: white;
+}
+
+code {
+    text-wrap: wrap;
+}
+
+.constante {
+    color: #ff79c6;
+}
+.string {
+    color: #f1fa8c;
+}
+.comentario {
+    color: #7a7a7a;
+    font-style: italic;
+}
+.const {
+    color: #bd93f9;
+}
+.modulo {
+    color: #8be9fd;
+}
+.metodo {
+    color: #50fa7b;
+}
+
+.ejemplo-rsa img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.referencias li a{
+    overflow-wrap: break-word;
+}
+
+footer {
+    text-align: end;
+    font-weight: bold;
+    background: #bbb;
+}
+
+@media (max-width: 800px) {
+    
+    section {
+        margin-inline: 2rem;
+        margin-bottom: 2rem;
+        background-color: white;
+        border: 1px solid rgb(204, 204, 204);
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .criptosistema-publico img {
+        max-width: 250px;
+    }
+}

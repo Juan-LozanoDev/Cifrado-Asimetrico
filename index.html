@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Blog: Cifrado asimetrico</title>
+        <link rel="stylesheet" href="./styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+
+    <body>
+        <header>
+            <h1>Blog Cifrado Asimetrico</h1>
+        </header>
+        <main class="Blog">
+            <section class="criptosistema-publico">
+                <h1>Qué es el criptosistema de clave pública.</h1>
+                <p>
+                    El criptosistema de clave pública, conocido como criptografía asimétrica, es un sistema
+                    criptográfico en el que se utilizan dos claves, una pública y otra privada, las cuales están
+                    matemáticamente relacionadas, pero no idénticas. La clave pública, la cual se encuentra disponible
+                    para cualquiera es utilizada para la encriptación de la información, mientras que la clave privada
+                    la cual se mantiene en secreto y solo es conocida por el propietario es utilizada para la
+                    desencriptación de la información. (GlobalSign, 2022)
+                </p>
+                <p>
+                    El criptosistema de clave pública se basa en operaciones matemáticas que están relacionadas con
+                    problemas complejos de resolver y requieren bastante tiempo de computación para su solución. Por lo
+                    cual se hace extremadamente complejo para terceros obtener la clave privada, lo que garantiza la
+                    seguridad de la información.
+                </p>
+
+                <p>
+                    Este criptosistema de clave pública es utilizado comúnmente en firmas digitales, comunicaciones
+                    seguras, autenticación, intercambio de claves, tecnología blockchain y navegación web. (Badman &
+                    Kosinski, 2024)
+                </p>
+
+                <figure>
+                    <img
+                        src="https://media.licdn.com/dms/image/v2/D4D12AQGanCt9IwdFXw/article-inline_image-shrink_1000_1488/article-inline_image-shrink_1000_1488/0/1699915920729?e=2147483647&v=beta&t=XL--sMVMMsp3ofMT_uQ-SfoO_XXaNlQlR8E6d7NPOVA"
+                        alt="Criptosistema publico"
+                    />
+                    <figcaption>
+                        Funcionamiento criptosistema de clave publica.
+                        <br />
+                        Fuente: (Hernández, 2023)
+                    </figcaption>
+                </figure>
+            </section>
+            <section class="funcion-criptosistema-publico">
+                <h1>Cómo funciona y cuáles son sus algoritmos representativos.</h1>
+                <p>
+                    Este sistema funciona mediante el uso de algoritmos criptográficos para la generación de una clave
+                    pública y una clave privada. La clave pública la cual puede ser utilizada por cualquiera, es usada
+                    para la encriptación de la información. Por otro lado, la clave privada la cual se mantiene en
+                    secreto y solo es conocida por el propietario se utiliza para la desencriptación de la información.
+                </p>
+                <p>
+                    Estas claves se caracterizan por ser de gran longitud, lo que a su vez garantiza una mayor seguridad
+                    respecto al cifrado simétrico.
+                </p>
+                <p>Algunos de los algoritmos más utilizados para la generación de claves públicas y privadas son:</p>
+                <ol>
+                    <li>
+                        RSA (Rivest, Shamir, Adleman): Llamado así en honor a los investigadores que la propusieron,
+                        siendo el algoritmo de cifrado más extendido en el mundo, debido a su sencillez y nivel de
+                        seguridad que proporciona. El proceso consta en la generación de las dos claves a partir de dos
+                        números primos aleatorios grandes denominados p y q, con una longitud similar de bits
+                        (comprendidos entre los 1024 y 2048 bits). El proceso se encuentra basado en la factorización de
+                        estos dos números elegidos.
+                        <a href="https://es.wikipedia.org/wiki/RSA" target="_blank">Más información</a>
+                    </li>
+                    <li>
+                        Criptografía curva elíptica (ECC): Es un método basado en las propiedades matemáticas de las
+                        curvas elípticas sobre campos finitos. Ofrece una seguridad similar al RSA con claves más
+                        pequeñas, lo que se traduce en una mayor eficiencia.
+                        <a
+                            href="https://www.keepersecurity.com/blog/es/2023/06/07/what-is-elliptic-curve-cryptography/"
+                            target="_blank"
+                        >
+                            Mas información
+                        </a>
+                    </li>
+                    <li>
+                        Algoritmo de firma digital (DSA): Es un algoritmo diseñado específicamente para la creación de
+                        firmas digitales, garantizando la autenticidad e integridad de los mensajes.
+                    </li>
+                    <li>
+                        ElGamal: Es un algoritmo basado en el Intercambio de claves
+                        <a href="https://es.wikipedia.org/wiki/Intercambio_de_claves_de_Diffie-Hellman" target="_blank">
+                            Diffie-Hellman</a>, utilizado ampliamente para la transmisión segura de datos y firmas digitales. (GeeksForgeeks, 2025)
+                    </li>
+                </ol>
+            </section>
+            <section class="ventajas-criptosistema-publico">
+                <h1>Ventajas, desventajas y diferencias con el criptosistema simétrico.</h1>
+                <p>
+                    La principal diferencia que se puede encontrar entre el cifrado simétrico (criptosistema de clave
+                    privada) y el cifrado asimétrico (criptosistema de clave pública) es el uso de una sola clave en el
+                    criptosistema de clase privada, la cual, utiliza esta misma tanto para la encriptación como para la
+                    desencriptación de la información.
+                </p>
+                <p>
+                    Si bien, el cifrado simétrico ofrece una mayor eficiencia en la encriptación de datos, el uso de
+                    solo una clave lo torna más vulnerable a que la información sea expuesta al tener que compartir la
+                    clave secreta entre las partes que se comunican, siendo posible la intercepción de esta por parte de
+                    terceros.
+                </p>
+                <p>
+                    El criptosistema asimétrico evita esta vulnerabilidad al compartir la clave pública para la encriptación,
+                    manteniendo en todo momento la clave privada en secreto. De este modo si el atacante intercepta el
+                    mensaje encriptado, no podrá descifrar la información sin acceso a la clave privada.
+                </p>
+                <h2>Ventajas del criptosistema asimétrico</h2>
+                <ol>
+                    <li>No requiere el intercambio de la clave privada.</li>
+                    <li>Nivel de seguridad elevado al utilizar modelos matemáticos complejos</li>
+                    <li>Escalable y eficaz en un sistema con grandes usuarios.</li>
+                    <li>Facilita la confidencialidad en entornos inseguros</li>
+                </ol>
+                <h2>Desventajas del criptosistema asimétrico</h2>
+                <ol>
+                    <li>Menor eficiente que el cifrado simétrico.</li>
+                    <li>Mayor carga de recursos computacionales.</li>
+                    <li>No es conveniente para el cifrado de datos masivos.</li>
+                    <li>
+                        Ante el avance de la computación cuántica, algunos algoritmos como el RSA y el ECC podrían
+                        romperse con la implementación de algoritmos cuánticos como lo son el
+                        <a
+                            href="https://utimaco.com/es/servicio/base-de-conocimientos/criptografia-postcuantica/que-es-el-algoritmo-de-shor#:~:text=El%20algoritmo%20de%20Shor%20es,y%20espacio%20O(logN)"
+                            target="_blank"
+                        >
+                            algoritmo de Shor
+                        </a>
+                        dejando obsoletos los principales sistemas de cifrado. (Badman & Kosinski, 2024)
+                    </li>
+                </ol>
+            </section>
+            <section class="caso-criptosistema-publico">
+                <h1>Caso práctico de aplicación (qué algoritmo, dónde y cómo usarlo).</h1>
+                <p>
+                    Para el siguiente caso practico, se implementa un criptosistema de clave pública utilizando el
+                    algoritmo RSA y desarrollado en Node.js haciendo uso del modulo crypto. El proposito del codigo es
+                    cifrar un mensaje con la clave pública y descrifrarlo por medio del uso de la clave privada,
+                    asegurando asi que solo el receptor del mensaje con la clave privada puede descrifrar el contenido
+                    del mensaje
+                </p>
+                <p>
+                    Como primer paso, se genera la clave publica y la clave privada por medio del algoritmo RSA con un
+                    tamaño de clave de 2048 bits en formato PEM
+                </p>
+                <div class="ejemplo-rsa">
+                    <pre><code>
+<span class="comentario">// Importar el módulo de criptografía</span>
+<span class="constante">const</span> <span class="modulo">crypto</span> = require(<span class="string">'crypto'</span>);
+
+<span class="comentario">// Generar claves pública y privada</span>
+<span class="constante">const</span> <span class="const">{ publicKey, privateKey }</span> = <span class="modulo">crypto</span>.<span class="metodo">generateKeyPairSync</span>(<span class="string">'rsa'</span>, {
+    modulusLength: 2048,
+    publicKeyEncoding: {
+        type: <span class="string">'spki'</span>,
+        format: <span class="string">'pem'</span>
+    },
+    privateKeyEncoding: {
+        type: <span class="string">'pkcs8'</span>,
+        format: <span class="string">'pem'</span>
+        }
+    });
+                    </code></pre>
+
+                    <p>
+                        El segundo paso consiste en cifrar el mensaje
+                        <small><b>"Este es el mensaje secreto"</b></small>
+                        . Para ello el mensaje es transformado a un Buffer y cifrado con la clave pública
+                    </p>
+
+                    <pre><code>
+<span class="comentario">// Mensaje original</span>
+<span class="constante">const</span><span class="const"> mensajeSinEncriptar</span> = <span class="string">"Este es el mensaje secreto"</span>;
+console.<span class="metodo">log</span>(<span class="string">"Mensaje sin encriptar:"</span>, <span class="const"> mensajeSinEncriptar</span>);
+
+<span class="comentario">// Encriptar con la clave pública</span>
+<span class="constante">const</span><span class="const"> mensajeEncriptado</span> = <span class="modulo">crypto</span>.<span class="metodo">publicEncrypt</span>(<span class="const">privateKey</span>, <span class="modulo">Buffer</span>.<span class="metodo">from</span>(<span class="const"> mensajeSinEncriptar</span>, <span class="string">'utf8'</span>));
+console.<span class="metodo">log</span>(<span class="string">"Mensaje encriptado (base64):"</span>, <span class="const"> mensajeEncriptado</span>.<span class="metodo">toString</span>(<span class="string">'base64'</span>));
+                    </code></pre>
+                    <p>
+                        Finalmente, con el mensaje ya encriptado con la clave pública, se procede a la desencriptación
+                        del mensaje con la clave privada.
+                    </p>
+                    <pre><code>
+<span class="comentario">// Desencriptar con la clave privada</span>
+<span class="constante">const</span><span class="const"> mensajeDesencriptado</span> = <span class="modulo">crypto</span>.<span class="metodo">privateDecrypt</span>(<span class="const">privateKey</span>, <span class="const">mensajeEncriptado</span>);
+console.<span class="metodo">log</span>(<span class="string">"Mensaje desencriptado:"</span>, <span class="const"> mensajeDesencriptado</span>.<span class="metodo">toString</span>(<span class="string">'utf8'</span>));
+                    </code></pre>
+                    <p>Obteniendo como resultado lo siguiente</p>
+                    <figure><img src="./Assets/ejemplorsa.jpg" alt="Resultado" /></figure>
+                </div>
+                <p>
+                    Este tipo de implementación puede incorporarse en el envío de datos sensibles como lo son
+                    contraseñas, tokens o claves simetricas entre el cliente y el servidor.
+                </p>
+                <p>
+                    El codigo utilizado como caso de ejemplo podra ser obtenido en el siguiente
+                    <a href="https://github.com/Juan-LozanoDev/Cifrado-Asimetrico" target="_blank">enlace</a>
+                </p>
+            </section>
+            <section class="recomendaciones-criptosistema-publico">
+                <h1>Observaciones y recomendaciones para implementar el criptosistema.</h1>
+                <p>
+                    Si bien el criptosistema de clave pública es una de las mejores alternativas para garantizar la
+                    confidencialidad de la información, es importante tener en cuenta ciertas observaciones y
+                    recomendaciones para su implementación de forma eficiente y segura.
+                </p>
+                <h2>Observaciones</h2>
+                <ol>
+                    <li>Alto consumo de recursos</li>
+                    <p>
+                        El cifrado y descifrado con el criptosistema asimétrico requiere una mayor cantidad de recursos
+                        computacionales, lo que lo hace ineficiente para el cifrado de grandes volúmenes de datos.
+                    </p>
+                    <li>Limitación en el tamaño de datos a cifrar</li>
+                    <p>
+                        Tal y como se indicó, al ser elevado el consumo de recursos computacionales, no es recomendado
+                        cifrar archivos enteros directamente con cifrado asimétrico
+                    </p>
+                </ol>
+                <h2>Recomendaciones</h2>
+                <ol>
+                    <li>Utilizar el cifrado asimétrico con el cifrado simétrico.</li>
+                    <p>
+                        Uno de los inconvenientes que presenta el cifrado simétrico es el uso de una clave única. Sin
+                        embargo, es posible cifrar esta clave con el cifrado asimétrico, el cual permitirá aprovechar la
+                        eficiencia del cifrado simétrico garantizando la confiabilidad de la clave única.
+                    </p>
+                    <li>Proteger la clave privada</li>
+                    <p>
+                        La seguridad de la información encriptada depende de que la clave privada permanezca
+                        confidencial. Para ello es recomendado almacenarla en entornos seguros como módulos de seguridad
+                        de hardware (HSM). (FORTINET, 2022)
+                    </p>
+                    <li>Tamaño de las claves</li>
+                    <p>
+                        El uso de claves cortas perjudica la seguridad de la información encriptada, por lo cual es
+                        recomendado el uso de claves de al menos 2048 bits en RSA.
+                    </p>
+                    <li>Actualizaciones de las claves y algoritmos.</li>
+                    <p>
+                        Con el avance la computación cuántica, algunos algoritmos podrían quedar obsoletos, lo que
+                        comprometería la información encriptada con algoritmos como RSA o DSA. Por lo cual es importante
+                        mantenerse informado sobre nuevas recomendaciones y algoritmos de encriptación.
+                    </p>
+                    <li>Protección de ataques.</li>
+                    <p>
+                        Se debe tener en cuenta que, aunque el cifrado de clave público es un método de encriptación muy
+                        segura, no es inmune a amenazas cibernéticas, entre los cuales se pueden encontrar ataques de
+                        intermediario, ataques de fuerza bruta, ataques criptoanalíticos, por lo cual se debe aplicar
+                        medidas de seguridad para mitigarlos, tales como verificar la autenticidad de las claves
+                        públicas. (Dougherty, 2024)
+                    </p>
+                </ol>
+            </section>
+            <section class="referencias">
+                <h1>Referencias</h1>
+                <ul>
+                    <li>
+                        Badman, A., & Kosinski, M. (08 de Agosto de 2024). ¿Qué es el cifrado asimétrico? Obtenido de
+                        IBM:
+                        <a href="https://www.ibm.com/es-es/think/topics/asymmetric-encryption" target="_blank">
+                            https://www.ibm.com/es-es/think/topics/asymmetric-encryption
+                        </a>
+                    </li>
+                    <li>
+                        Dougherty, R. (3 de Diciembre de 2024). Cifrado de Clave Pública vs. Clave Privada: Una
+                        Explicación Detallada. Obtenido de Kiteworks:
+                        <a
+                            href="https://www.kiteworks.com/es/intercambio-seguro-de-archivos/cifrado-clave-publica-vs-clave-privada/"
+                            target="_blank"
+                        >
+                            https://www.kiteworks.com/es/intercambio-seguro-de-archivos/cifrado-clave-publica-vs-clave-privada/
+                        </a>
+                    </li>
+                    <li>
+                        FORTINET. (6 de Julio de 2022). ¿Qué es el módulo de seguridad de hardware? Obtenido de
+                        FORTINET:
+                        <a
+                            href="https://www.fortinet.com/lat/resources/cyberglossary/hardware-security-module"
+                            target="_blank"
+                        >
+                            https://www.fortinet.com/lat/resources/cyberglossary/hardware-security-module
+                        </a>
+                    </li>
+                    <li>
+                        GeeksForgeeks. (11 de Julio de 2025). Algoritmo de cifrado ElGamal. Obtenido de GeeksForgeeks:
+                        <a
+                            href="https://www.geeksforgeeks.org/computer-networks/elgamal-encryption-algorithm/"
+                            target="_blank"
+                        >
+                            https://www.geeksforgeeks.org/computer-networks/elgamal-encryption-algorithm/
+                        </a>
+                    </li>
+                    <li>
+                        GlobalSign. (21 de Enero de 2022).¿Qué es la criptografía de clave pública? Obtenido de
+                        GlobalSign:
+                        <a
+                            href="https://www.globalsign.com/es/centro-de-informacion-ssl/que-es-la-criptografia-de-clave-publica"
+                            target="_blank"
+                        >
+                            https://www.globalsign.com/es/centro-de-informacion-ssl/que-es-la-criptografia-de-clave-publica
+                        </a>
+                    </li>
+                    <li>
+                        Hernández, Y. F. (13 de Noviembre de 2023). Cifrado asimétrico. Obtenido de Linkedin:
+                        <a
+                            href="https://www.linkedin.com/pulse/cifrado-asim%C3%A9trico-yilmer-ferney-talero-hern%C3%A1ndez-ovvuf/"
+                            target="_blank"
+                        >
+                            https://www.linkedin.com/pulse/cifrado-asim%C3%A9trico-yilmer-ferney-talero-hern%C3%A1ndez-ovvuf/
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <footer>Elaborado por Juan Pablo Lozano Cespedes</footer>
+    </body>
+</html>
